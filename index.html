@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Outfit:wght@600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <title>Frontend Mentor | NFT preview card component</title>
@@ -25,11 +25,9 @@
     <main class="content">
       <aside class="nft__preview">
         <div class="nft__card">
-          <img
-            class="nft__image"
-            src="images/image-equilibrium.jpg"
-            alt="EQUILIBRIUM"
-          />
+          <div class="nft__image">
+            <img src="images/image-equilibrium.jpg" alt="EQUILIBRIUM" />
+          </div>
           <h1 class="nft__header">Equilibrium #3429</h1>
           <p>Our Equilibrium collection promotes balance and calm.</p>
           <div class="nft__price">
@@ -41,15 +39,16 @@
             </p>
             <p class="nft__daysleft">
               <span class="nft__clock"
-                ><img src="images/icon-clock.svg" alt="clock" /></span
+                ><img src="images/icon-clock.svg" alt="clock" /> </span
               >3 days left
             </p>
           </div>
+          <div class="divider"></div>
           <div class="nft__createdby">
             <span class="avatar"
               ><img src="images/image-avatar.png" alt=""
             /></span>
-            <p>Creation of Jules Wyvern</p>
+            <p>Creation of <span class="nft__owner">Jules Wyvern</span></p>
           </div>
         </div>
       </aside>
