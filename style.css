@@ -124,7 +124,7 @@ body {
 
 .nft__card {
   display: grid;
-  gap: 0.5rem;
+  gap: 0.8rem;
 }
 
 .nft__header {
@@ -133,7 +133,7 @@ body {
 }
 
 .nft__cryptoprice {
-  font-weight: var(--fw--bold);
+  font-weight: var(--fw--very-bold);
   color: var(--clr--cyan);
 }
 
@@ -146,10 +146,17 @@ body {
   position: relative;
 }
 
+.nft__view {
+  overflow: hidden;
+}
+
+.nft__main_img {
+  border-radius: 0.5em;
+}
+
 .nft__image div {
-  border-radius: 0.5rem;
   position: absolute;
-  background-color: var(--clr--cyan);
+  background-color: hsl(178, 100%, 50%, 40%);
   top: 0;
   width: 100%;
   height: 100%;
@@ -161,6 +168,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.nft__image div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 0.5em;
 }
 
 .nft__cryptoprice,
@@ -184,6 +197,7 @@ body {
 }
 
 .nft__createdby {
+  margin-top: 0.2rem;
   font-size: 16px;
 }
 
@@ -196,4 +210,10 @@ body {
 
 .nft__owner {
   color: var(--clr--white);
+}
+
+.nft__header:hover,
+.nft__owner:hover {
+  color: var(--clr--cyan);
+  cursor: pointer;
 }
